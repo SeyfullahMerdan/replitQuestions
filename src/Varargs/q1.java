@@ -1,6 +1,6 @@
-package Varargs;
+package varargs;
 
-public class q1 {
+public class Q1 {
 
 	/* Write a return method that accepts more
 	than one integer as parameter and prints the
