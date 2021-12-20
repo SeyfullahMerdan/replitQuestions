@@ -2,7 +2,7 @@ package scanner;
 
 import java.util.Scanner;
 
-public class Q9 {
+public class Q09 {
 
 	/*
 	 * Girilen zamaný saniyeye çeviren bir program yazýnýz.

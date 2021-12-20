@@ -2,7 +2,7 @@ package scanner;
 
 import java.util.Scanner;
 
-public class Q8 {
+public class Q08 {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
