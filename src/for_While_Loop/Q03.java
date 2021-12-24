@@ -1,6 +1,5 @@
 package for_While_Loop;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Q03 {
@@ -14,27 +13,31 @@ public class Q03 {
 		 * Output: [a, s]
 		 */
 
-		String str="Javaisalsoeasy";
-		int sayac=0;
-		// String kontrol= "abcdefghijklmnoprstuvxyzwq";
-		String duplicate="";
 		
-		for (int i = 0; i < str.length()-1; i++) {   // j yi alacak altta tüm harflere bakacak
-		                               // a yý alcak tüm harflere bakacak....
-			for (int j = str.length()-1; 0 <= j; j--) {
-				if ( str.charAt(i) == str.charAt(j) ) {
-				    sayac++;
-				}		
-			}
-			if (sayac>=2) {
-				duplicate+= str.charAt(i); 
-				 sayac=0;           }
-			else {
-				sayac=0;
-			}
+		
+		//Scanner scan = new Scanner(System.in);
+        //System.out.println("Enter a text:");  
+        
+		String str = "Javaisalsoeasy";
+        
+        String duplicate ="";
+        
+        
+        for (int i = 0; i < str.length(); i++) {
+		
+        	for (int j = i+1; j < str.length(); j++) {
+			
+        		if (str.charAt(i)==str.charAt(j)) {
+        			if (!duplicate.contains(str.substring(j,j+1))) {
+        				duplicate+=str.charAt(j);
+					}	
+				}
+			}		
 		}
-			System.out.println(duplicate);  // aasasas
-		 
+  
+		String arr[] = duplicate.split("");
+
+		System.out.println(Arrays.toString(arr));
 			
 			
 			
