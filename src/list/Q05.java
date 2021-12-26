@@ -24,7 +24,7 @@ public class Q05 {
 	
 		int bolen=0;
 	
-		for (int j = sayi+1 ; j < 100; j++) {
+		for (int j = sayi+1 ; j < 50; j++) {
 			
 		for (int i = 2; i <= j ; i++) {
 			
@@ -37,7 +37,7 @@ public class Q05 {
 		if (bolen==1) {
 			System.out.println( j + " bir asal sayýdýr.");
 		} else {
-			System.out.println( j + " asal sayý degildir.");
+			// System.out.println( j + " asal sayý degildir.");
 		}
 		
 		bolen=0;
