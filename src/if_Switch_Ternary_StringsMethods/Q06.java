@@ -53,6 +53,13 @@ public class Q06 {
 		                                                               }
 		}
 		
+
+		// Ternary ---- 
+	   System.out.println( name.length()>3
+			   ? "Invalid entry, please try again!" 
+			   : ( (name.charAt(0)==name.charAt(1)) || (name.charAt(0)==name.charAt(2)) || ( name.charAt(1)==name.charAt(2))
+				   ? "String has duplicate characters" 
+				   : "String has unique characters" ) );		
 		scan.close();
 		
 	}
